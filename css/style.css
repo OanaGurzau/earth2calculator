@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background-color: #10002B;
+  color: #FBFEF9;
+  font-size: 2em; }
+
+div {
+  width: 100%;
+  height: 100%; }
+
+label {
+  font-family: "Bookman Old Style"; }
+
+.amatic {
+  font-family: 'Amatic SC', cursive;
+  font-size: 15vh;
+  text-align: center;
+  color: #d6d6d6; }
+
+.percSign {
+  background: rgba(255, 255, 255, 0.5) url("/imgs/percentage.svg") right 30px center no-repeat;
+  background-size: 0.8em; }
+
+.container {
+  padding: 25px;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px; }
+
+.card {
+  position: relative;
+  background-color: #897E91;
+  border-radius: 2rem;
+  transition: transform 1s;
+  transform-style: preserve-3d; }
+  .card:hover {
+    box-shadow: 0px 0px 20px 1px #000; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden; }
+
+.back {
+  transform: rotateY(180deg); }
+
+input, select {
+  padding: 10px;
+  margin: 0 0 10px 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  width: 75%;
+  height: 45%;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 2em;
+  font-family: "Bookman Old Style";
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  display: block;
+  transition: all .3s; }
+  input:hover, select:hover {
+    background-color: #d6d6d6; }
+
+#percentage2 {
+  width: 53%;
+  padding-left: 20px; }
+
+select {
+  width: 60%;
+  padding: 10px;
+  font-size: 0.8em;
+  font-family: "Bookman Old Style";
+  text-align: center; }
+
+#result, #percentage2 {
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+  color: #10002B;
+  font-family: "Bookman Old Style"; }
+
+input[type='button'] {
+  width: 50%;
+  background-color: #10002B;
+  padding: 10px;
+  color: #FBFEF9;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  cursor: pointer; }
+  input[type='button']:hover {
+    background-color: #38215c; }
+
+.card-title {
+  top: 0;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 2.5vh;
+  color: #10002B; }
+
+.switch {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5vh;
+  text-align: center;
+  color: #d6d6d6;
+  cursor: pointer; }
+
+.glow {
+  animation: glow 1s ease-in-out infinite alternate; }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073; }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; } }
